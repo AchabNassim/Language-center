@@ -1,0 +1,75 @@
+
+.Testimonials {
+    background-color: bisque;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Testimonials h1 {
+    text-align: center;
+    font-size: 40px;
+    color:#000343;
+    -webkit-text-stroke:white 0.5px;
+}
+
+
+.feedbacks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+
+.icon_name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.icon_name img {
+    height: 60px;
+    width: 60px;
+}
+
+.icon_name span {
+    font-weight: bold;
+}
+
+.student{
+    width: 30%;
+    background-color:#FFFFFF;
+    border-radius: 20px;
+}
+
+.student_comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.student_comment ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.student_comment span {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+
+}
+
+.student_comment p {
+    width: 70%;
+}
+ 
+li img { 
+        height: 20px;
+} 
