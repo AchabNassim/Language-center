@@ -4,10 +4,10 @@ body {
 
 .Testimonials {
     background-color: bisque;
-    height: 500px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 25px;
 }
 
 .Testimonials h1 {
@@ -101,6 +101,7 @@ footer {
 
 .footer_menu ul {
     list-style: none;
+    width: 33%;
 }
 
 .copyright {
@@ -116,4 +117,31 @@ footer {
 .copyright a {
     text-decoration: none;
     color: whitesmoke;
+}
+
+@media(max-width:770px){
+    .feedbacks{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .student {
+        width: 70%;
+        margin-top: 20px;
+    }
+
+    .student_comment p {
+        text-align: center;
+    }
+
+
+    .footer_menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_menu ul{
+        text-align: center;
+        width: 90%;
+    }
 }
