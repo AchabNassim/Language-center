@@ -5,12 +5,13 @@ body {
 
 nav {
     background-color: #000444 ;
-    padding: 20px;
+    padding: 20px 0;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 nav span {
-    margin-left: 50px;
+    
     font-size: 30px;
     color: white;
 }
@@ -20,14 +21,22 @@ nav span {
 .nav_menu ul { 
     display: flex;
     list-style: none;
-    margin-left: 400px;
 }
  
-.nav_menu li {
+.menu_item {
     margin-left: 60px;
     font-size: 15px;
     color: white;
     text-transform: uppercase;
+}
+
+.menu_item a{
+        text-decoration: none;
+        color: white;
+}
+
+.menu_item:hover {
+    background-color: #4e549e ;
 }
 
  header {
@@ -158,4 +167,16 @@ select {
 .copyright a {
     text-decoration: none;
     color: whitesmoke;
+}
+
+@media(max-width:770px) {
+
+    text{
+        width: 70%;
+        text-align: center;
+    }
+    
+    .nav_menu {
+        display: none;
+    }
 }
