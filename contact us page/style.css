@@ -109,6 +109,7 @@ select {
 .contact_us textarea {
     height: 95px;
     font-size: 18px;
+    outline: none;
 }
 
  .submit {
