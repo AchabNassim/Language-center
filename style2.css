@@ -1,0 +1,78 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: arial;
+    font-weight: bold;
+}
+body 	 {
+	background-color: #FAF5F5;
+}
+#classes {
+	text-align: center;
+}
+#classes h1 {
+	color:#FB5E2E ;
+	font-size:35px ;
+	margin: 30px auto 10px;
+}
+#classes p {
+	color: #000444;
+	font-size: 22px;
+	width: 55%;
+	margin: 20px auto;
+}
+
+
+
+#payment {
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+	margin-top: 80px;
+}
+.paymentbox  {
+	background-color: #000444;
+	padding: 25px;
+	border: 2px none;
+	border-radius: 3%;
+}
+
+#payment h3 {
+	font-size: 22px;
+	color:#FB5E2E ;
+	margin-bottom: 14px;
+
+}
+#payment p {
+	font-size: 18px;
+	line-height: 25px;
+	color:white ;
+}
+
+#services {
+	text-align: center;
+
+}
+
+#service {
+	font-size: 30px;
+	color:#FB5E2E ;
+	margin: 80px 0 20px;
+}
+#services p {
+	text-align: center;
+	font-size: 22px;
+	width: 58%;
+	margin: 30px auto;
+}
+#serviceprice {
+	display: flex;
+	justify-content: columns;
+	align-items: center;
+	color: #000444;
+	border: 3px solid #000444;
+}
+.specification {
+	margin: 0 auto;
+}
