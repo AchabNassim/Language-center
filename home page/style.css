@@ -21,6 +21,7 @@ nav span {
     display: flex;
     list-style: none;
 }
+
  
 .menu_item {
     margin-left: 60px;
@@ -69,9 +70,9 @@ header {
 
 .text p {
     /*left: 80%;*/
-    font-size: 29px;
-    color:rgba(0, 5, 68, 0.568);
-    -webkit-text-stroke: 1px #eeeeee ;
+    font-size: 30px;
+    color:rgba(0, 5, 68, 0.74);
+    -webkit-text-stroke: 0.3px #eeeeee ;
     text-shadow: 1px 1px 1px #eeeeee; 
                /*3px 3px 4px #eeeeee;*/
 } 
