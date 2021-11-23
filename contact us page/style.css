@@ -40,33 +40,38 @@ nav span {
 }
 
  header {
-    display: flex;
-    background-image: url(language.jpg);
+     display: flex;
+    background-image: url(language2.jpg);
     justify-content: center;
-    text-align: center;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
+    padding: 7em 4em;
 }
 
 .text {
     font-weight: bold;
     width: 45%;
-    margin: 100px auto;
-    font-size: 36px;
-    color:white;
-    -webkit-text-stroke: 2px #00054486 ;
-    text-shadow: 1px 1px 1px #00054486, 
-               3px 3px 4px #00054486;
+    
 }
 
 
 .text h1 {
-    font-size: 40px;
+    font-size: 30px;
+    color: rgb(251 95 47);
+    -webkit-text-stroke: 0.3px #eeeeee ;
+    text-shadow: 1px 1px 1px #eeeeee;
+    /*margin: 5;*/
 }
 .text p {
-    left: 80%;
-
+    font-size: 29px;
+    color: rgba(0, 5, 68, 0.568);
+    -webkit-text-stroke: 1px #eeeeee ;
+    text-shadow: 1px 1px 1px #eeeeee;
+    
+    /*-webkit-text-stroke: 2px #00054486 ;
+    text-shadow: 1px 1px 1px #00054459, 
+               3px 3px 4px #0005445d;*/
 } 
 
 main {
@@ -157,7 +162,7 @@ select {
 .copyright {
     display: inline-block;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);}
+    background-color: rgba(0, 0, 0, 0.7);}
 
 .copyright p {
     color:rgb(199, 192, 192);
