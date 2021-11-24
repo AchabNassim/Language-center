@@ -6,18 +6,20 @@ body {
 nav {
     background-color: #000444 ;
     padding: 20px 0;
-    display: flex;
+    display: flex; /*sets the flexible length on flexible items*/
     align-items: center;
     justify-content: space-around;
 }
+
+
+/*the logo*/
 nav span {
-    
     font-size: 30px;
     color: white;
 }
 
 
-
+/* nav menu*/
 .nav_menu ul { 
     display: flex;
     list-style: none;
@@ -41,14 +43,17 @@ nav span {
 
  header {
      display: flex;
+     padding: 7em 4em;
+     justify-content: center;
+/*header background*/
     background-image: url(language2.jpg);
-    justify-content: center;
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    padding: 7em 4em;
+    
 }
 
+/*header text*/
 .text {
     font-weight: bold;
     width: 45%;
@@ -56,45 +61,51 @@ nav span {
 }
 
 
+/* the title of the header text*/   
 .text h1 {
     font-size: 30px;
     color: rgb(251 95 47);
+    text-transform: uppercase;
+    /*stroke on header title*/
     -webkit-text-stroke: 0.3px #eeeeee ;
     text-shadow: 1px 1px 1px #eeeeee;
-    /*margin: 5;*/
 }
+
+/* header paragraph*/
 .text p {
     font-size: 29px;
+    font-weight: bold;
     color: rgba(0, 5, 68, 0.568);
-    -webkit-text-stroke: 1px #eeeeee ;
+    -webkit-text-stroke: 0.3px #eeeeee ;
     text-shadow: 1px 1px 1px #eeeeee;
     
-    /*-webkit-text-stroke: 2px #00054486 ;
-    text-shadow: 1px 1px 1px #00054459, 
-               3px 3px 4px #0005445d;*/
 } 
 
+/*main content*/
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* text above form*/
 .main_top {
-    margin-top: 40px;
+    margin: 40px 0 0 170px;
     font-size: 18px;
-    margin-left: 170px;
 }
 
 .main_top p {
     width: 80%;
 }
 
+
+/* contacting form*/
 .contact_us form {
     display: flex;
     flex-direction: column;
 }
 
+/*inputs in form*/
 .contact_us input {
     margin-top: 20px;
     outline: none;
@@ -102,9 +113,11 @@ main {
     border-radius: 5px;
     border-width: thin;
     border-style: solid;
-    font-size: 17px;
+    font-size: 18px;
 }
 
+
+/* "select a purpose" input */
 select {
     margin-top: 20px;
     color: rgba(0, 0, 0, 0.6);
@@ -112,14 +125,20 @@ select {
     outline: none;
     font-size: 18px;
     width: 700px;
+    border-radius: 5px;
+    border-width: thin;
+    border-style: solid;
 }
 
+
+/* Message area*/
 .contact_us textarea {
     height: 95px;
     font-size: 18px;
     outline: none;
 }
 
+/*submit button*/
  .submit {
  width: 180px;
  margin: 0 auto;
@@ -131,6 +150,8 @@ select {
      background-color:  #00054486 ;
  }
 
+
+ /*footer*/
  footer {
     background-color: #000343;
     display: flex;
@@ -140,6 +161,8 @@ select {
     margin-top: 30px;
 }
  
+
+/* the footer menu*/
 .footer_menu {
     display: flex;
     flex-direction: row;
@@ -147,16 +170,21 @@ select {
     width: 100%;
 }
 
+/* list title*/
 .footer_menu h2 {
     font-size: 15px;
     text-transform: uppercase;
 }
 
 
-
+/* footer list*/
 .footer_menu ul {
     list-style: none;
     width: 33%;
+}
+
+.footer_menu li{
+    width: 70%
 }
 
 .copyright {
@@ -174,6 +202,8 @@ select {
     color: whitesmoke;
 }
 
+
+/*for mobile*/
 @media(max-width:770px) {
 
     text{
@@ -184,4 +214,119 @@ select {
     .nav_menu {
         display: none;
     }
+
+    .footer_menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_menu ul{
+        text-align: center;
+        width: 90%;
+    }
+
+    .footer_menu li{
+        width: 100%;
+    }
+
+    .text {
+    width: 90%;
+    }
+
+    .text h1 {
+    font-size: 28px;
+    }
+    
+    .text p {
+    font-size: 26px;
+    -webkit-text-stroke: 0.2px #eeeeee ;
+    text-shadow: 1px 1px 1px #eeeeee; 
+    }
+
+    .headline {
+    font-size: 18px;
+    -webkit-text-stroke:white 0.3px;
+    }
+
+    .headline h1 {
+    width: 60%;
+    }
+
+    .Testimonials {
+        padding:0;
+    }
+    .nav_menu {
+        display: none;
+    }
+
+    
+    .text {
+        width: 90%;
+        }
+    
+    .text h1 {
+        font-size: 28px;
+        }
+        
+    .text p {
+        font-size: 26px;
+        -webkit-text-stroke: 0.2px #eeeeee ;
+        text-shadow: 1px 1px 1px #eeeeee; 
+    }
+
+    .contact_us {
+        width: 60%;
+    }
+
+    select {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .contact_us input {
+        font-size: 14px;
+    }
+
+    .contact_us textarea {
+        font-size: 15px;
+    }
+
+    main {
+        padding-top: 40px;
+    }
+
+    .main_top {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        width: 80%;
+    }
+        
+    footer h1 {
+        font-size: 20px;
+    }
+
+    .footer_menu h2 {
+        font-size: 13px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+
+    /* change the order of footer menu lists */
+    #about_school {
+        order: 1;
+    }
+
+    #programmes {
+        order: 2;
+    }
+    
+    #talk_to_us {
+        order: 3;
+    }
+    
 }

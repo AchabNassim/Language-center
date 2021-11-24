@@ -6,10 +6,12 @@ body {
 nav {
     background-color: #000444 ;
     padding: 20px 0;
-    display: flex;
+    display: flex; /*sets the flexible length on flexible items*/
     align-items: center;
     justify-content: space-around;
 }
+
+/*the logo*/
 nav span {
     
     font-size: 30px;
@@ -17,6 +19,7 @@ nav span {
 }
 
 
+/* nav menu*/
 .nav_menu ul { 
     display: flex;
     list-style: none;
@@ -42,56 +45,60 @@ nav span {
 
 header {
     display: flex;
+    padding: 7em 4em;
+    text-align: center;
+/*header background*/
     background-image: url(language2.jpg);
     background-size: cover;
-    text-align: center;
     background-position: top;
     background-repeat: no-repeat;
-    padding: 7em 4em;
 }
 
+/*header text*/
 .text {
     
     font-weight: bold;
     width: 45%;
-    /*margin: 5em auto;*/
 }
  
-    
-
-
+/* the title of the header text*/   
 .text h1 {
     font-size: 28px;
     color: rgb(251 95 47);
+    text-transform: uppercase;
+    /*stroke on header title*/
     -webkit-text-stroke: 0.3px #eeeeee ;
     text-shadow: 1px 1px 1px #eeeeee;
-    text-transform: uppercase;
+    
 }
 
+/* header paragraph*/
 .text p {
-    /*left: 80%;*/
     font-size: 30px;
+    font-weight: bold;
     color:rgba(0, 5, 68, 0.74);
     -webkit-text-stroke: 0.3px #eeeeee ;
-    text-shadow: 1px 1px 1px #eeeeee; 
-               /*3px 3px 4px #eeeeee;*/
+    text-shadow: 1px 1px 1px #eeeeee;
 } 
 
 
-
+/*testimonials section */
 .Testimonials {
-    background-size: cover;
-    background-image: url(reviews.png);
-    background-position: top;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 1em 1em;
+    /*background of the testimonials section*/
+    background-size: cover;
+    background-image: url(reviews_2.png);
+    background-position: top; /*sets the starting position of the background pic*/
+    background-repeat: no-repeat; /* sets if/how a background image will be repeated.*/
 
 }
 
+
+/* headline in testimonials section*/
 .headline {
     display: flex;
     justify-content: center;
@@ -105,6 +112,8 @@ header {
     width: 40%;
 }
 
+
+/*here start all reviews area*/
 .feedbacks {
     display: flex;
     flex-direction: row;
@@ -112,7 +121,7 @@ header {
     margin: 150px auto;
 }
 
-
+/* icons and names in feedbacks */
 .icon_name {
     display: flex;
     flex-direction: row;
@@ -148,21 +157,27 @@ header {
     list-style: none;
     padding: 0;
 }
-
 .student_comment span {
     color: rgba(0, 0, 0, 0.5);
     font-weight: bold;
 
 }
 
+/* paragraph in student reviews*/
 .student_comment p {
     width: 70%;
 }
  
+
+/*stars rating in feedbacks*/
 li img { 
         height: 20px;
 } 
 
+/*here ends all reviews area*/
+
+
+/* this is the footer*/
 footer {
     background-color: #000343;
     display: flex;
@@ -172,6 +187,7 @@ footer {
 
 }
  
+/* the footer menu*/
 .footer_menu {
     display: flex;
     flex-direction: row;
@@ -179,17 +195,16 @@ footer {
     width: 100%;
 }
 
+/* list title*/
 .footer_menu h2 {
     font-size: 15px;
     text-transform: uppercase;
 }
 
-
-
+/* footer list*/
 .footer_menu ul {
     list-style: none;
     width: 33%;
-    margin-left: 55px;
 }
 
 .footer_menu li{
@@ -211,6 +226,8 @@ footer {
     color: whitesmoke;
 }
 
+
+/*for mobile*/
 @media(max-width:770px){
     .feedbacks{
         flex-direction: column;
@@ -240,21 +257,47 @@ footer {
         width: 100%;
     }
 
-    header {
-        
+    .text {
+    width: 90%;
     }
 
-.text {
-    width: 50%;
-}
-
-.text h1 {
-    font-size: 22px;
-}
-.text p {
-    font-size: 19px;
-    -webkit-text-stroke: 0.4px #eeeeee ;
+    .text h1 {
+    font-size: 28px;
+    }
+    
+    .text p {
+    font-size: 26px;
+    -webkit-text-stroke: 0.2px #eeeeee ;
     text-shadow: 1px 1px 1px #eeeeee; 
-}
+    }
 
+    .headline {
+    font-size: 18px;
+    -webkit-text-stroke:white 0.3px;
+    }
+
+    .headline h1 {
+    width: 60%;
+    }
+
+    .Testimonials {
+        padding:0;
+    }
+    .nav_menu {
+        display: none;
+    }
+
+    /* change the order of footer menu lists */
+    #about_school {
+        order: 1;
+    }
+
+    #programmes {
+        order: 2;
+    }
+    
+    #talk_to_us {
+        order: 3;
+    }
+    
 }
