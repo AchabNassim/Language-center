@@ -131,14 +131,14 @@ blockquote {
 }
 
 #payment h3 {
-	font-size: 18px;
+	font-size: 20px;
 	color:#000444 ;
 	margin-bottom: 14px;
 	text-decoration: underline;
 
 }
 #payment p {
-	font-size: 15px;
+	font-size: 18px;
 	line-height: 25px;
 	color:#000444 !important ;
 }
@@ -187,7 +187,6 @@ blockquote {
 	text-decoration: underline;
 	cursor: pointer;
 }
-
 
 
 					/*mobile section*/
@@ -301,5 +300,5 @@ blockquote {
 	.specification p {
 		font-size: 18px !important;
 	}
-
+	/*End*/
 }
