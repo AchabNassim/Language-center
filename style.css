@@ -1,8 +1,11 @@
-body {
+*{
+    padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family:arial ;
 }
-
 nav {
     background-color: #000444 ;
     padding: 20px 0;
@@ -14,7 +17,7 @@ nav {
 /*the logo*/
 nav span {
     
-    font-size: 30px;
+    font-size: 27px;
     color: white;
 }
 
@@ -44,7 +47,6 @@ nav span {
 
 
 header {
-    display: flex;
     padding: 7em 4em;
     text-align: center;
 /*header background*/
@@ -55,30 +57,32 @@ header {
 }
 
 /*header text*/
-.text {
-    
-    font-weight: bold;
-    width: 45%;
-}
  
 /* the title of the header text*/   
 .text h1 {
-    font-size: 28px;
+    font-size: 34px;
     color: rgb(251 95 47);
+    margin:30px  auto;
+    width: 40%;
+    text-align: center;
+    font-style: italic;
     text-transform: uppercase;
     /*stroke on header title*/
-    -webkit-text-stroke: 0.3px #eeeeee ;
-    text-shadow: 1px 1px 1px #eeeeee;
+    -webkit-text-stroke: 0.9px #eeeeee ;
+    text-shadow: px 1px 1px #eeeeee;
     
 }
 
 /* header paragraph*/
 .text p {
-    font-size: 30px;
+    font-size: 25px;
+    width: 50%;
+    margin: auto;
     font-weight: bold;
     color:rgba(0, 5, 68, 0.74);
     -webkit-text-stroke: 0.3px #eeeeee ;
-    text-shadow: 1px 1px 1px #eeeeee;
+    text-shadow: 2px 2px 2px #eeeeee;
+    padding:10px 0 120px;
 } 
 
 /* Main Section */
@@ -87,10 +91,10 @@ header {
     border-bottom: 3px solid #FB5E2E;
 }
 #headerpres {
-    margin: 40px auto 50px;
+    margin: 50px auto 50px;
     color: #FB5E2E;
-    font-size: 36px;
-    width: 40%;
+    font-size: 34px;
+    width: 35%;
     font-style: italic;
 }
 .paragraph1 {
@@ -264,6 +268,7 @@ blockquote {
 
 /* Here ends the main part */
 
+
 /*testimonials section */
 .Testimonials {
     display: flex;
@@ -291,6 +296,7 @@ blockquote {
 }
 
 .headline h1 {
+    margin-top: 60px;
     width: 40%;
 }
 
@@ -300,7 +306,7 @@ blockquote {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 150px auto;
+    margin: 110px auto  190px;
 }
 
 /* icons and names in feedbacks */
@@ -361,46 +367,40 @@ li img {
 
 /* this is the footer*/
 footer {
-    background-color: #000343;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #000444;
     color: rgba(256, 256, 256, 0.7);
-
 }
- 
-/* the footer menu*/
-.footer_menu {
+#logo2 {
+    color: white;
+   text-align: center;
+   padding-top: 30px;
+   margin-bottom: 30px;
+}
+#footerflex {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
-    width: 100%;
+    width: 87%;
+}
+.footerheaders H3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.footerheaders {
+    line-height: 26px;
+    margin-bottom: 40px;
 }
 
-/* list title*/
-.footer_menu h2 {
-    font-size: 15px;
-    text-transform: uppercase;
-}
-
-/* footer list*/
-.footer_menu ul {
-    list-style: none;
-    width: 33%;
-}
-
-.footer_menu li{
-    width: 70%
-}
+ 
+/* the copyright part*/
 
 .copyright {
-    display: inline-block;
-    width: 100%;
     background-color: rgba(0, 0, 0, 0.9);}
 
 .copyright p {
     color:rgb(199, 192, 192);
-    margin-left: 20px;
+    padding: 10px;
+    margin-left: 60px;
 }
 
 .copyright a {
@@ -409,12 +409,18 @@ footer {
 }
 
 
-/*for mobile*/
+        /*for mobile*/
+
+
 @media(max-width:600px){
+
+
+
     /* Here starts the main section */
+
     #headerpres{
         font-size: 28px;
-        width: 80%;
+        width: 70%;
     }
 
     .paragraph1 {
@@ -524,8 +530,8 @@ footer {
     
     .feedbacks{
         flex-direction: column;
-        align-items: center;
-        
+        align-items: center;   
+         margin: 70px auto  140px;   
     }
 
     .student {
@@ -537,31 +543,17 @@ footer {
         text-align: center;
     }
 
-    .footer_menu {
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer_menu ul{
-        text-align: center;
-        width: 90%;
-    }
-
-    .footer_menu li{
-        width: 100%;
-    }
-
-    .text {
-    width: 90%;
-    }
-
     .text h1 {
     font-size: 28px;
+    width: 70%;
     }
     
     .text p {
     font-size: 26px;
+    width: 80%;
     -webkit-text-stroke: 0.2px #eeeeee ;
     text-shadow: 1px 1px 1px #eeeeee; 
+    padding-bottom: 50px;
     }
 
     .headline {
@@ -570,7 +562,8 @@ footer {
     }
 
     .headline h1 {
-    width: 60%;
+    width: 80%;
+    margin-bottom: 10px;
     }
 
     .Testimonials {
@@ -579,18 +572,14 @@ footer {
     .nav_menu {
         display: none;
     }
-
-    /* change the order of footer menu lists */
-    #about_school {
-        order: 1;
     }
-
-    #programmes {
-        order: 2;
+     .footerflex {
+        margin: 0 auto;
+        width: auto;
     }
-    
-    #talk_to_us {
-        order: 3;
+    .copyright p  {
+        margin: 0;
+        padding: 10px;
     }
     
 }
