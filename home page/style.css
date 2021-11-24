@@ -81,6 +81,188 @@ header {
     text-shadow: 1px 1px 1px #eeeeee;
 } 
 
+/* Main Section */
+#presentation {
+    text-align: center;
+    border-bottom: 3px solid #FB5E2E;
+}
+#headerpres {
+    margin: 40px auto 50px;
+    color: #FB5E2E;
+    font-size: 36px;
+    width: 40%;
+    font-style: italic;
+}
+.paragraph1 {
+    text-align: left;
+    color: #000564;
+    font-size:22px ;
+    width: 60%;
+    margin: 0 auto;
+}
+#presentation h3 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+    color:#FB5E2E ;
+}
+#flags {
+    margin: 10px 0 40px;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+            /*Teachers section*/
+
+#teachers {
+       background-color: #FAF5F5;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+
+}
+#teachers .language {
+    width: 45%;
+}
+.imgteachers{
+   margin:auto;
+}
+.imgteachers img {
+    border: 4px solid #000444;
+    border-radius: 80%;
+    margin: 45px auto 30px;
+   display: block;
+}
+.headerteach {
+    width:55%;
+    margin: 15px auto ;
+    font-size: 25px;
+    color: #FB5E2E;
+    text-align: center;
+
+}
+.paragraphteach {
+    line-height: 23px;
+    font-size: 21px;
+    color: #000444;
+    width: 55%;
+    margin: 20px auto 15px ;
+}
+blockquote {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 19px;
+    color: #000444d9;
+
+}
+
+#english {
+    margin: 10px 0 30px;
+}
+#spanish {
+    margin: 10px 0 30px;
+}
+.border{
+    width: 2px;
+    height: 250px;
+    background-color: #FB5E2E;
+}
+                /*Service Section*/
+#classes {
+    text-align: center;
+}
+#classes h1 {
+     font-style: italic;
+    color:#FB5E2E ;
+    font-size:35px ;
+    margin: 55px auto 30px;
+}
+#classes p {
+    color: #000444;
+    font-size: 23px;
+    text-align: left;
+    width: 50%;
+    margin: 10px auto;
+}
+
+#payment {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 80px;
+}
+.paymentbox  {
+    padding: 25px;
+    border: 1px solid #fb5e2e;
+    border-radius: 3%;
+}
+.paymentbox:hover {
+    background-color:#f7d1cd;
+    border:1px solid #fb5e2e;
+}
+
+#payment h3 {
+    font-size: 20px;
+    color:#000444 ;
+    margin-bottom: 14px;
+    text-decoration: underline;
+
+}
+#payment p {
+    font-size: 18px;
+    line-height: 25px;
+    color:#000444 !important ;
+}
+
+#services {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+#service {
+    font-size: 30px;
+    color:#FB5E2E ;
+    margin: 80px 0 20px;
+}
+#services p {
+    text-align: center;
+    font-size: 22px;
+    width: 70%;
+    margin: 30px auto;
+    color: #000444;
+}
+#specification {
+    display: flex;
+    flex-direction: column;
+}
+.specification   {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5px auto;
+    color:#000444 !important;
+    width: 50%;
+    border: 1px solid #fb5e2e;
+    border-radius: 1%;
+}
+.specification p {
+    color: #090335b7;
+    font-size: 17px !important;
+    font-weight: bold;
+}
+.price {
+    color: #090335b7 !important;
+    font-weight: none;
+}
+.price:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Here ends the main part */
 
 /*testimonials section */
 .Testimonials {
@@ -228,7 +410,118 @@ footer {
 
 
 /*for mobile*/
-@media(max-width:770px){
+@media(max-width:600px){
+    /* Here starts the main section */
+    #headerpres{
+        font-size: 28px;
+        width: 80%;
+    }
+
+    .paragraph1 {
+          width: 75%;
+          font-size: 20px;
+    }
+    /*teachers section*/
+
+    #teachers {
+        display: flex;
+        flex-direction: columns;
+
+    }
+
+    #teachers .language {
+        width: 100%;
+    }
+
+    .imgteachers img {
+    margin: 25px auto 20px;
+    }
+
+    .headerteach {
+    width:55%;
+    margin: 24px auto ;
+    text-align: center;
+    font-size: 27px;
+    }
+
+    .paragraphteach {
+    line-height: 25px;
+    font-size: 22px;
+   width: 80%;
+    margin: 30px auto 20px ;
+    padding-bottom: 10px;
+    }
+    blockquote    {
+    font-size: 22px;
+    border-bottom: 2px solid #FB5E2E ;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    }
+    .border {
+        display: none;
+    }
+    /*Classes Section*/
+
+    #classes h1 {
+    font-size:33px ;
+    margin: 50px auto 30px;
+    }
+    #classes p {
+    font-size: 22px;
+    text-align: center;
+    width: 80%;
+    }
+
+     #payment {
+     flex-direction: column;
+     align-items: center;
+     flex-wrap: wrap;
+     }
+
+    .paymentbox {
+    width: 80%;
+    margin: 20px;
+    }
+    #payment h3 {
+    font-size: 22px;
+    color:#000444 ;
+    margin-bottom: 14px;
+    text-decoration: underline;
+    }
+    #payment p {
+    color: #000444;
+    font-size: 18px;
+    line-height: 25px;
+    color:white ;
+    }
+    #service {
+    font-size: 30px;
+    font-style: italic;
+    width: 70%;
+    margin: 30px auto;
+    }
+    #services p {
+    font-size: 22px;
+    width: 75%;
+    margin: 0 auto;
+    text-align: left;
+    }
+    #services > p:first-of-type {
+        margin-bottom: 40px;
+    }
+    .specification {
+    text-align: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px 0;
+    }
+    .specification p {
+        font-size: 18px !important;
+    }
+    /* here ends the main section */
+    
+    
     .feedbacks{
         flex-direction: column;
         align-items: center;
