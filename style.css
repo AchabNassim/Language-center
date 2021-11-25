@@ -12,13 +12,14 @@ nav {
     display: flex; /*sets the flexible length on flexible items*/
     align-items: center;
     justify-content: space-around;
+    position: sticky;
+    top: 0;
 }
 
 /*the logo*/
-nav span {
-    
-    font-size: 27px;
-    color: white;
+#logo1 {
+	height: 37px;
+	
 }
 
 
