@@ -1,2 +1,2 @@
 # Language-center
-Hey there
+Website made for a language center.
